@@ -22,11 +22,11 @@ class School
 
 
     def sort
-        sorted_hash = {}
+        sorted_roster = {}
         @roster.each do |grade, names|
-          sorted_hash[grade] = names.sort
+          sorted_roster[grade] = names.sort
         end
-        sorted_hash
+        sorted_roster
       end
 end
 
