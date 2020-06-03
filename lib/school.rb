@@ -11,7 +11,7 @@ class School
   def add_student(student, age)
     @roster[age] = [] unless @roster[age]
     @roster[age] << student
-  end
+end 
 
   def grade(age)
     @roster[age]
@@ -19,6 +19,6 @@ class School
   def sort
     sorted_students = {}
     @roster.each {|k, v_array| sorted_students[k] = v_array.sort}
-    Hash[sorted_students.sort]
+      sorted_students
+    end
   end
-end
